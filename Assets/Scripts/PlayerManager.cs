@@ -5,12 +5,13 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     InputManager inputManager;
-
+    [SerializeField] CameraManager cameraManager;
     PlayerController playerController;
-    void Start()
+    void Awake()
     {
         inputManager = GetComponent<InputManager>();
         playerController = GetComponent<PlayerController>();
+        //cameraManager = FindObjectOfType<CameraManager>();
     }
 
     // Update is called once per frame
@@ -22,5 +23,10 @@ public class PlayerManager : MonoBehaviour
     private void FixedUpdate()
     {
         playerController.HandleAllMovements();
+    }
+
+    private void LateUpdate()
+    {
+        cameraManager.HandleAllCameraMovement();
     }
 }

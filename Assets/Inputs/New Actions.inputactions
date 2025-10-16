@@ -14,6 +14,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Camera",
+                    "type": "PassThrough",
+                    "id": "6c6921ee-5ee4-49fb-a51b-d593beb944f2",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -128,13 +137,24 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "Right Stick",
-                    "id": "1d8eea10-7876-417f-b90d-a1f80828b56f",
-                    "path": "2DVector",
+                    "name": "",
+                    "id": "99f0c571-2404-44fc-8b01-2849fdb77683",
+                    "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "Camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Right Stick",
+                    "id": "1d8eea10-7876-417f-b90d-a1f80828b56f",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Camera",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -145,7 +165,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -156,7 +176,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -167,7 +187,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -178,7 +198,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "Camera",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
